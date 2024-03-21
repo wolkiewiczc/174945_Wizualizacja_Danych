@@ -1,0 +1,112 @@
+
+import random
+
+
+b = []
+for i in range(10):
+    b.append(random.randint(1,100))
+print(b)
+
+c = [x for x in b if x%2==0]
+print(c)
+
+skroty = {"PZU": "Państwowy zakład ubezpieczeń",
+ "ZUS": "Zaklad ubezpieczeń społecznych",
+ "PKO": "Państwowa kasa oszczędności"}
+
+odwrocone2 = {value: key for key, value in skroty.items()}
+print(odwrocone2)
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+def który(a,b,c):
+    if a>b:
+        if a>c:
+            return 1
+        else:
+            return 3
+    else:
+        if b>c:
+            return 2
+        else:
+            return 3
+
+def czy(a,b,c):
+    if który(a,b,c)==1:
+        if a*a==b*b+c*c:
+             print("trójkąt prostokątny")
+        else:
+            print("sprzecznosc")
+    elif który(a,b,c)==2:
+        if b * b == a * a + c * c:
+            print("trójkąt prostokątny")
+        else:
+            print("sprzecznosc")
+    else:
+        if c * c == a * a + b * b:
+            print("trójkąt prostokątny")
+        else:
+            print("sprzecznosc")
+
+
+czy(a,b,c)
+
+import math
+def kwadrat(a=2):
+    return a*a
+
+print(kwadrat(5))
+
+def ciag(a=1,b=4,ile=10):
+    suma = a
+    for i in range(1,1+ile):
+        suma= suma*((b*i)+a)
+    print(suma)
+
+ciag(1,1,10)
+
+import math
+try:
+    a = int(input())
+    result = math.sqrt(a)
+except ValueError:
+    print('zla wartosc')
+else:
+    print(result)
+
+a = math.pow(math.exp(4) - math.log2(34), 1/3)
+b = round(a, 2)
+print(a)
+print(b)
+
+def wierza(n):
+    if n < 10 | n < 1:
+       print('zla wartosc n')
+    else:
+       for i in range(1, n+1):
+           for j in range(0, i)
+                print('A', end='')
+           print()
+
+
+def piramida(n):
+    a = 2*n-1
+    for i in range(n):
+        print(((a//2)-i+1)*" ","A"*((i+1)*2-1))
+
+
+def wektor_nxn(n):
+    wektor = []
+    for i in range(0, n):
+        lista = [random.randint(0, 20) for _ in range(n)]
+        wektor.append(lista)
+    for i in range(len(wektor)):
+        print(wektor[i])
+    print("STARTUJEMY")
+    for j in wektor:
+         print(j, sum(j))
+
+
+  
