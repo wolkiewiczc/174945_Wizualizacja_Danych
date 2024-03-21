@@ -1,0 +1,29 @@
+#    INNA FORMA INPUTA    #
+import sys
+a = sys.stdin.readline()
+b = sys.stdin.readline()
+c = sys.stdin.readline()
+wynik = pow(int(a), int(b)) + int(c)
+sys.stdout.write(str(wynik))
+
+
+# tworzenie ciągów #
+b = [4**x for x in range(0, 8)]
+
+# printowanie w wielu wierszach #
+print("A", end="")
+
+# Przydatne math. #
+math.exp(4)
+math.log2(34)
+math.cos(45)
+math.e
+math.pow(a,b)
+
+
+# LOSOWE INTY #
+random.randint(min,max)
+
+# BUDOWA SLOWNIKA #
+slownik = {'mleko': 'sztuki', 'ziemiaki': 'kg', 'jogurt': 'sztuki'}
+lista = [key for key in slownik.keys() if slownik[key] == 'sztuki']
