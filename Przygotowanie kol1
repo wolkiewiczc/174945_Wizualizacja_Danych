@@ -20,6 +20,7 @@ math.cos(45)
 math.e
 math.pow(a,b)
 
+round(liczba, 2) --- zaokrąglenie liczby do 2 miejsc po przecinku
 
 # LOSOWE INTY #
 random.randint(min,max)
